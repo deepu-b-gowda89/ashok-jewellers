@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6d1425">
+  <title>Ashok Jewellers | Crafting Elegance in Gold</title>
+  <meta name="description" content="Explore gold and silver jewellery designs from Ashok Jewellers.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Ashok Jewellers home">
+      <img src="assets/ashok-jewellers-logo.png" alt="Ashok Jewellers logo">
+    </a>
+    <nav class="desktop-nav">
+      <a href="#collections" data-i18n="collections">Collections</a>
+      <a href="#rates" data-i18n="rates">Metal rates</a>
+      <a href="#visit" data-i18n="visit">Visit us</a>
+    </nav>
+    <div class="header-actions">
+      <button id="langToggle" class="language-button" type="button" aria-label="Switch language">ಕನ್ನಡ</button>
+      <button id="menuToggle" class="menu-button" type="button" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Featured collection">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="eyebrow">TRADITION · TRUST · TIMELESS BEAUTY</p>
+        <h1 id="heroTitle">Jewellery for Every Occasion</h1>
+        <p id="heroText" data-i18n="heroText">Discover designs for life's most memorable moments.</p>
+        <a class="button button-gold" href="#collections" data-i18n="explore">Explore collections</a>
+        <div class="hero-dots" id="heroDots" aria-label="Banner slides"></div>
+      </div>
+      <div class="hero-image-wrap">
+        <img id="heroImage" src="assets/ashok-jewellers-logo.png" alt="Ashok Jewellers featured collection">
+      </div>
+    </section>
+
+    <section id="rates" class="rates-section section-wrap">
+      <div class="section-heading">
+        <div><p class="eyebrow" data-i18n="dailyRates">DAILY RATES</p><h2 data-i18n="metalRates">Today's metal rates</h2></div>
+        <p class="updated" id="ratesUpdated">Owner-published demo rates</p>
+      </div>
+      <div class="rate-grid">
+        <article class="rate-card"><span data-i18n="gold22">22K Gold</span><strong id="rate22">₹ —</strong><small data-i18n="perGram">per gram</small></article>
+        <article class="rate-card"><span data-i18n="gold24">24K Gold</span><strong id="rate24">₹ —</strong><small data-i18n="perGram">per gram</small></article>
+        <article class="rate-card"><span data-i18n="silver">Silver</span><strong id="rateSilver">₹ —</strong><small data-i18n="perGram">per gram</small></article>
+      </div>
+      <p class="rate-note" data-i18n="rateNote">Rates are entered by the shop and may change. Please confirm before visiting.</p>
+    </section>
+
+    <section id="collections" class="section-wrap collection-section">
+      <div class="section-heading">
+        <div><p class="eyebrow" data-i18n="curated">CURATED FOR YOU</p><h2 data-i18n="ourDesigns">Explore our designs</h2></div>
+        <p data-i18n="browseNote">Browse the collection and enquire about a design.</p>
+      </div>
+      <div class="catalogue-tools">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search by name or product ID" data-i18n-placeholder="searchPlaceholder"></label>
+        <select id="categoryFilter" aria-label="Filter category"><option value="all" data-i18n="allCategories">All categories</option></select>
+        <div class="category-chips" id="categoryChips"></div>
+      </div>
+      <div id="productGrid" class="product-grid"></div>
+      <p id="emptyState" class="empty-state" hidden data-i18n="noProducts">No designs match your search.</p>
+    </section>
+
+    <section class="story-section">
+      <div class="story-inner">
+        <p class="eyebrow" data-i18n="ourPromise">OUR PROMISE</p>
+        <h2 data-i18n="storyTitle">Tradition that shines. Values that last.</h2>
+        <p data-i18n="storyText">Explore our collection in person and contact our team for design availability and details.</p>
+        <a id="storyWhatsApp" class="button button-outline" href="#" target="_blank" rel="noopener" data-i18n="whatsappUs">Enquire on WhatsApp</a>
+      </div>
+    </section>
+
+    <section id="visit" class="visit-section section-wrap">
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="comeVisit">COME VISIT US</p><h2 data-i18n="findShop">Find our shop</h2></div></div>
+      <div class="visit-grid">
+        <div class="visit-card">
+          <h3 data-i18n="contactDetails">Contact details</h3>
+          <p id="shopAddress">Add the shop address in website/app.js</p>
+          <p id="shopHours">Opening hours: please confirm with the shop.</p>
+          <div class="contact-actions">
+            <a id="callLink" class="button button-maroon" href="tel:+910000000000" data-i18n="callShop">Call shop</a>
+            <a id="whatsappLink" class="button button-gold" href="#" target="_blank" rel="noopener" data-i18n="whatsappUs">Enquire on WhatsApp</a>
+          </div>
+        </div>
+        <div class="map-card">
+          <div class="map-icon">⌖</div><h3 data-i18n="visitInPerson">Visit us in person</h3>
+          <p data-i18n="mapPlaceholder">Add the shop's Google Maps link in the website settings.</p>
+          <a id="mapLink" href="#" target="_blank" rel="noopener" class="text-link" data-i18n="getDirections">Get directions →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <img src="assets/ashok-jewellers-logo.png" alt="" class="footer-logo">
+    <p>ASHOK JEWELLERS</p><small>Crafting Elegance in Gold</small>
+    <p class="footer-links"><a href="#collections" data-i18n="collections">Collections</a> · <a href="#rates" data-i18n="rates">Metal rates</a> · <a href="#visit" data-i18n="visit">Visit us</a></p>
+    <small>© <span id="year"></span> Ashok Jewellers</small>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

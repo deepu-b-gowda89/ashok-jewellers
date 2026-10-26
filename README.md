@@ -1,7 +1,7 @@
 # Ashok Jewellers — starter project
 
 This package contains:
-- `website/`: a responsive bilingual (English/Kannada) jewellery showcase website.
+- `website/`: a responsive bilingual (Kannada/English) jewellery showcase website.
 - `android/`: a native Android Kotlin + Jetpack Compose owner-app project.
 - `docs/`: setup notes, limitations, and launch checklist.
 - `assets/ashok-jewellers-logo.png`: the supplied full logo.

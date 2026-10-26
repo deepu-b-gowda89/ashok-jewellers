@@ -12,7 +12,7 @@ Ashok Jewellers is a digital project designed to bring a jewellery business onli
 
 A responsive jewellery showcase built with HTML, CSS, and JavaScript.
 
-- English and Kannada language toggle
+- Kannada and English language toggle
 - Product search and category filters
 - Jewellery product cards with demo content
 - WhatsApp enquiry links

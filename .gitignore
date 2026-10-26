@@ -1,0 +1,32 @@
+# Android / Gradle
+**/build/
+**/.gradle/
+**/local.properties
+**/.idea/
+**/*.iml
+**/captures/
+**/.externalNativeBuild/
+**/.cxx/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+secrets/
+*.jks
+*.keystore
+google-services.json
+
+# Website tooling
+node_modules/
+dist/
+coverage/
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
